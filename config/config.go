@@ -13,17 +13,18 @@ type Config struct {
 	Port    string
 	Env     string
 
-	DBHost string
-	DBPort int
-	DBUser string
-	DBPass string
-	DBName string
+	DBHost     string
+	DBPort     int
+	DBUser     string
+	DBPass     string
+	DBName     string
 	JWT_SECRET string
 }
 
 var AppConfig *Config
 
 func LoadConfig() {
+	// test commit
 	if err := godotenv.Load(); err != nil {
 		log.Println("No .env file found, using system environment variables")
 	}
