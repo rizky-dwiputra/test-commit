@@ -24,7 +24,7 @@ type Config struct {
 var AppConfig *Config
 
 func LoadConfig() {
-	// test commit
+	// test commit again for sure verified commit
 	if err := godotenv.Load(); err != nil {
 		log.Println("No .env file found, using system environment variables")
 	}
